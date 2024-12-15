@@ -22,8 +22,8 @@ jobs:
 
     - name: Zip publishable website
       run: |
-        zip -r publish.zip
-      working-directory: ./src/ToyCompany/ToyCompany.Website/
+        zip -r publish.zip /home/runner/work/mslearn-manage-end-end/mslearn-manage-end-end/src/ToyCompany/ToyCompany.Website/publish2/
+
 
     - name: Upload website as workflow artifact
       uses: actions/upload-artifact@v3
