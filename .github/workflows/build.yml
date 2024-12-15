@@ -17,13 +17,13 @@ jobs:
     
     - name: Build publishable website
       run: |
-        dotnet publish --configuration Release  -o publish
+        dotnet publish --configuration Release  -o publish2
       working-directory: ./src/ToyCompany/ToyCompany.Website
 
     - name: Zip publishable website
       run: |
         zip -r publish.zip
-      working-directory: ./src/ToyCompany/ToyCompany.Website/publish/
+      working-directory: ./src/ToyCompany/ToyCompany.Website/publish2
 
     - name: Upload website as workflow artifact
       uses: actions/upload-artifact@v3
