@@ -23,7 +23,7 @@ jobs:
     - name: Zip publishable website
       run: |
         zip -r publish.zip
-      working-directory: ./src/ToyCompany/ToyCompany.Website/publish2
+      working-directory: ./src/ToyCompany/ToyCompany.Website/
 
     - name: Upload website as workflow artifact
       uses: actions/upload-artifact@v3
