@@ -23,6 +23,10 @@ jobs:
       run: |
         ls ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/publish/
 
+    - name: List files in the repository
+      run: |
+        ls ./src/ToyCompany/ToyCompany.Website/bin/Release/netcoreapp3.1/
+
     - name: Zip publishable website
       run: |
         zip -r publish.zip
