@@ -1,3 +1,6 @@
+//comment toegevoegd
+// nog mee comment
+
 @description('The location into which your Azure resources should be deployed.')
 param location string = resourceGroup().location
 
